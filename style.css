@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  height: 5rem;
+  height: 80px;
+  bottom: 0;
+}
+
+.navbar {
+  .nav-item {
+    a {
+      font-size: 1rem;
+      color: #0b0d14;
+    }
+  }
+  .mybtn {
+    font-size: 1rem;
+    color: #0e0d0d;
+    padding: 8px 30px;
+    border-radius: 45px;
+    background: #fec545;
+    border: none;
+  }
+  li a img {
+    width: 1.25rem;
+    height: 1.25rem;
+  }
+}
+
+.hero-page {
+  width: 100%;
+  height: 100vh;
+  background: url("./images/hero-bg.jpg") no-repeat center center/cover;
+}
+
+.orderNow{
+  font-family: 'Dancing Script', cursive;
+  margin-block-start: 45px;
+  padding-block-start: 45px;
+  padding-block-end: 90px;
+
+  .box{
+    background: #222831;
+    padding: 20px 15px;
+    border-radius: 5px;
+
+    .img-box{
+      margin-inline-end: 15px;
+    }
+    img{
+      width: 175px;
+      height: 175px;
+      border-radius: 100%;
+      border: 5px solid #fec545;
+    }
+
+    .mybtn {
+    font-size: 1rem;
+    color: #0e0d0d;
+    padding: 8px 30px;
+    border-radius: 45px;
+    background: #fec545;
+    border: none;
+  }
+
+    h5{
+      font-size: 24px;
+      font-weight: 500;
+    }
+
+    h6{
+      font-size: 2.5rem;
+      margin-block: 10px;
+
+      span{
+        font-size: 1rem;
+      }
+    }
+  }
+}
+
+.myCard{
+  border-radius: 10%;
+  
+}
+.card{
+  
+  border-radius: 15px 15px 0 0;
+
+  .card-img-top{
+    height: 145px;
+    width: 145px;
+    background: #f1f2f3;
+  }
+
+  .card-img{
+    border-radius: 10px 10px 0 45px;
+    background: #0c0c0c;
+    padding: 25px;
+  }
+  .card-body{
+    color: #ffffff;
+    padding-inline: 15px;
+    background: #212529;
+  }
+}
+
+.about{
+  background: #222831;
+  height: 788px;
+  padding-block: 90px;
+  color: #ffffff;
+
+  .aboutUs{
+    width: 360px;
+  }
+
+   img{
+      width: 443px;
+      height: 607.89px;
+    }
+}
+@media screen and (max-width: 1440px) {
+ 
+  .card{
+    height: 419.5px;
+    width: 360px;
+  }
+    
+}
+
+@media screen and (max-width: 768px) {
+  .about{
+    height: auto;
+    text-align: center;
+    width: 100%;
+
+    .aboutUs{
+      width: 100%;
+      margin-bottom: 30px;
+    }
+
+    img{
+      width: 443px;
+      height: auto;
+    }
+  }
+
+  .orderNow{
+    .box{
+      text-align: center;
+
+      .img-box{
+        margin-inline-end: 0;
+        margin-block-end: 15px;
+      }
+    }
+  }
+  
+}

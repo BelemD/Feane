@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
+    <script src="https://kit.fontawesome.com/9b0fe6fbbf.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav class="navbar w-100 navbar-expand-lg px-lg-5 pt-lg-4 bottom-50 fixed-top">
+
+
+        <div class="myNav container-fluid d-flex justify-content-evenly align-content-between gap-5 px-lg-5 mb-lg-4">
+
+            <div>
+                <a class="navbar-brand ps-lg-3" href="#">
+                    <span class="text-light">Feane</span>
+                </a>
+            </div>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="true" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-text navbar-collapse d-flex gap-5 pb-0" id="navbarNav">
+
+                <ul class="navbar-nav d-flex justify-content-center align-content-between ">
+                    <li class="nav-item ms-2 d-md-inline">
+                        <a class="nav-link text-light inter-medium" href="#">HOME</a>
+                    </li>
+                    <li class="nav-item ms-2 d-md-inline">
+                        <a class="nav-link text-light inter-medium" href="#">MENU</a>
+                    </li>
+
+                    <li class="nav-item ms-2 d-md-inline ">
+                        <a class="nav-link inter-medium text-light" href="#">ABOUT</a>
+                    </li>
+                    <li class="nav-item ms-2 d-md-inline">
+                        <a class="nav-link inter-medium text-light" href="#">BOOKTABLE</a>
+                    </li>
+                </ul>
+
+                <div class="d-flex align-items-center justify-content-center gap-3">
+                    <a href="">
+                        <i class="fa-solid fa-user" style="color: #ffffff;"></i>
+                    </a>
+
+                    <a href="">
+                        <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i>
+                    </a>
+
+                    <a href="">
+                        <i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i>
+                    </a>
+
+                    <button class="mybtn text-light">
+                        Order Online
+                    </button>
+                </div>
+            </div>
+
+
+
+        </div>
+    </nav>
+
+    <div class="hero-page">
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./images/f1.png" class="d-block w-25" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./images/f2 (1).png" class="d-block w-25" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./images/f3.png" class="d-block w-25" alt="...">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="orderNow">
+        <div class="row mx-2 justify-content-center align-items-center gap-5">
+            <div class="box col-md-5 d-flex justify-content-sm-center align-items-center align-items-sm-center">
+                <div class="img-box">
+                    <img src="./images/o1.jpg" alt="hamburger">
+                </div>
+                <div class="">
+                    <h5 class="text-light">Tasty Tuesday</h5>
+                    <h6 class="text-light">20% <span>off</span></h6>
+                    <button class="mybtn text-light">
+                        Order Online <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i>
+                    </button>
+                </div>
+            </div>
+
+
+            <div class="box col-md-5 d-flex align-items-center">
+                <div class="img-box">
+                    <img src="./images/o1.jpg" alt="hamburger">
+                </div>
+                <div>
+                    <h5 class="text-light">Tasty Tuesday</h5>
+                    <h6 class="text-light">20% <span>off</span></h6>
+                    <button class="mybtn text-light">
+                        Order Online <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <div class="d-flex flex-column justify-content-center align-items-center my-5">
+            <h2>Our Menu</h2>
+
+            <div>
+                <div class="filter-menu d-flex justify-content-center align-items-center gap-4 my-4">
+                    <button class="active" data-filter="all">All</button>
+                    <button data-filter="burger">Burger</button>
+                    <button data-filter="pizza">Pizza</button>
+                    <button data-filter="pasta">Pasta</button>
+                    <button data-filter="fries">Fries</button>
+                </div>
+
+                <div class="row row-cols-1 row-cols-md-3 gap-5 justify-content-center align-items-center mx-2 my-4">
+                    <div class="col myCard " style="border-radius: 10%; width: 360px;">
+                        <div class="card h-100  d-flex flex-column justify-content-center align-items-center"
+                            style="background: #0c0c0c; border-radius: 10px;">
+                            <div class="card-img  d-flex flex-column justify-content-center align-items-center"
+                                style="background: #f1f2f3; ">
+                                <img src="./images/f1.png" class="card-img-top" alt="...">
+                            </div>
+                            <div class="card-body w-100" style="border-radius: 10px;">
+                                <h5 class="card-title">Delicious Pizza</h5>
+                                <p class="card-text">
+                                    Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam
+                                    voluptatem
+                                    repellendus sed eaque
+                                </p>
+
+                                <div class="d-flex justify-content-between">
+                                    <h5>$15</h5>
+                                    <a href="">
+                                        <i class="fa-solid fa-cart-shopping" style="color: #ffffff; "></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col myCard " style="border-radius: 10%; width: 360px;">
+                        <div class="card h-100  d-flex flex-column justify-content-center align-items-center"
+                            style="background: #0c0c0c; border-radius: 10px;">
+                            <div class="card-img  d-flex flex-column justify-content-center align-items-center"
+                                style="background: #f1f2f3; ">
+                                <img src="./images/f2.png" class="card-img-top" alt="...">
+                            </div>
+                            <div class="card-body w-100" style="border-radius: 10px;">
+                                <h5 class="card-title">Delicious Pizza</h5>
+                                <p class="card-text">
+                                    Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam
+                                    voluptatem
+                                    repellendus sed eaque
+                                </p>
+
+                                <div class="d-flex justify-content-between">
+                                    <h5>$15</h5>
+                                    <a href="">
+                                        <i class="fa-solid fa-cart-shopping" style="color: #ffffff; "></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col myCard " style="border-radius: 10%; width: 360px;">
+                        <div class="card h-100  d-flex flex-column justify-content-center align-items-center"
+                            style="background: #0c0c0c; border-radius: 10px;">
+                            <div class="card-img  d-flex flex-column justify-content-center align-items-center"
+                                style="background: #f1f2f3; ">
+                                <img src="./images/f3.png" class="card-img-top" alt="...">
+                            </div>
+                            <div class="card-body w-100" style="border-radius: 10px;">
+                                <h5 class="card-title">Delicious Pizza</h5>
+                                <p class="card-text">
+                                    Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam
+                                    voluptatem
+                                    repellendus sed eaque
+                                </p>
+
+                                <div class="d-flex justify-content-between">
+                                    <h5>$15</h5>
+                                    <a href="">
+                                        <i class="fa-solid fa-cart-shopping" style="color: #ffffff; "></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col myCard " style="border-radius: 10%; width: 360px;">
+                        <div class="card h-100  d-flex flex-column justify-content-center align-items-center"
+                            style="background: #0c0c0c; border-radius: 10px;">
+                            <div class="card-img  d-flex flex-column justify-content-center align-items-center"
+                                style="background: #f1f2f3; ">
+                                <img src="./images/f4.png" class="card-img-top" alt="...">
+                            </div>
+                            <div class="card-body w-100" style="border-radius: 10px;">
+                                <h5 class="card-title">Delicious Pizza</h5>
+                                <p class="card-text">
+                                    Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam
+                                    voluptatem
+                                    repellendus sed eaque
+                                </p>
+
+                                <div class="d-flex justify-content-between">
+                                    <h5>$15</h5>
+                                    <a href="">
+                                        <i class="fa-solid fa-cart-shopping" style="color: #ffffff; "></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col myCard " style="border-radius: 10%; width: 360px;">
+                        <div class="card h-100  d-flex flex-column justify-content-center align-items-center"
+                            style="background: #0c0c0c; border-radius: 10px;">
+                            <div class="card-img  d-flex flex-column justify-content-center align-items-center"
+                                style="background: #f1f2f3; ">
+                                <img src="./images/f5.png" class="card-img-top" alt="...">
+                            </div>
+                            <div class="card-body w-100" style="border-radius: 10px;">
+                                <h5 class="card-title">Delicious Pizza</h5>
+                                <p class="card-text">
+                                    Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam
+                                    voluptatem
+                                    repellendus sed eaque
+                                </p>
+
+                                <div class="d-flex justify-content-between">
+                                    <h5>$15</h5>
+                                    <a href="">
+                                        <i class="fa-solid fa-cart-shopping" style="color: #ffffff; "></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col myCard " style="border-radius: 10%; width: 360px;">
+                        <div class="card h-100  d-flex flex-column justify-content-center align-items-center"
+                            style="background: #0c0c0c; border-radius: 10px;">
+                            <div class="card-img  d-flex flex-column justify-content-center align-items-center"
+                                style="background: #f1f2f3; ">
+                                <img src="./images/f6.png" class="card-img-top" alt="...">
+                            </div>
+                            <div class="card-body w-100" style="border-radius: 10px;">
+                                <h5 class="card-title">Delicious Pizza</h5>
+                                <p class="card-text">
+                                    Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam
+                                    voluptatem
+                                    repellendus sed eaque
+                                </p>
+
+                                <div class="d-flex justify-content-between">
+                                    <h5>$15</h5>
+                                    <a href="">
+                                        <i class="fa-solid fa-cart-shopping" style="color: #ffffff; "></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col myCard " style="border-radius: 10%; width: 360px;">
+                        <div class="card h-100  d-flex flex-column justify-content-center align-items-center"
+                            style="background: #0c0c0c; border-radius: 10px;">
+                            <div class="card-img  d-flex flex-column justify-content-center align-items-center"
+                                style="background: #f1f2f3; ">
+                                <img src="./images/f7.png" class="card-img-top" alt="...">
+                            </div>
+                            <div class="card-body w-100" style="border-radius: 10px;">
+                                <h5 class="card-title">Delicious Pizza</h5>
+                                <p class="card-text">
+                                    Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam
+                                    voluptatem
+                                    repellendus sed eaque
+                                </p>
+
+                                <div class="d-flex justify-content-between">
+                                    <h5>$15</h5>
+                                    <a href="">
+                                        <i class="fa-solid fa-cart-shopping" style="color: #ffffff; "></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col myCard " style="border-radius: 10%; width: 360px;">
+                        <div class="card h-100  d-flex flex-column justify-content-center align-items-center"
+                            style="background: #0c0c0c; border-radius: 10px;">
+                            <div class="card-img  d-flex flex-column justify-content-center align-items-center"
+                                style="background: #f1f2f3; ">
+                                <img src="./images/f8.png" class="card-img-top" alt="...">
+                            </div>
+                            <div class="card-body w-100" style="border-radius: 10px;">
+                                <h5 class="card-title">Delicious Pizza</h5>
+                                <p class="card-text">
+                                    Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam
+                                    voluptatem
+                                    repellendus sed eaque
+                                </p>
+
+                                <div class="d-flex justify-content-between">
+                                    <h5>$15</h5>
+                                    <a href="">
+                                        <i class="fa-solid fa-cart-shopping" style="color: #ffffff; "></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col myCard " style="border-radius: 10%; width: 360px;">
+                        <div class="card h-100  d-flex flex-column justify-content-center align-items-center"
+                            style="background: #0c0c0c; border-radius: 10px;">
+                            <div class="card-img  d-flex flex-column justify-content-center align-items-center"
+                                style="background: #f1f2f3; ">
+                                <img src="./images/f9.png" class="card-img-top" alt="...">
+                            </div>
+                            <div class="card-body w-100" style="border-radius: 10px;">
+                                <h5 class="card-title">Delicious Pizza</h5>
+                                <p class="card-text">
+                                    Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam
+                                    voluptatem
+                                    repellendus sed eaque
+                                </p>
+
+                                <div class="d-flex justify-content-between">
+                                    <h5>$15</h5>
+                                    <a href="">
+                                        <i class="fa-solid fa-cart-shopping" style="color: #ffffff; "></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <Button>
+                    View More
+                </Button>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="about d-flex flex-column justify-content-center align-items-center">
+        
+         <div class="row justify-content-center align-items-center">
+                <div class="aboutUs col-md-6">
+                    <img src="./images/about-img.png" alt="">
+                </div>
+
+                <div class="aboutUs col-md-6">
+                    <h2>We are Feane</h2>
+                    <p>
+                        There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+                        alteration
+                        in some form, by injected humour, or randomised words which don't look even slightly believable.
+                        If you
+                        are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing
+                        hidden in
+                        the middle of text. All
+                    </p>
+
+                    <button>
+                        Read More
+                    </button>
+                </div>
+            </div>
+    </div>
+</body>
+
+</html>
