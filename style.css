@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: 'Open Sans', sans-serif;
+  /* background: #121212; */
+}
+
 .navbar {
   background: linear-gradient(to right, #0d0d0d, #2a2a2a);
 
@@ -53,6 +58,33 @@
   }
 }
 
+.hero-page {
+  padding-block-start: 150px;
+  padding-inline-start: 50px;
+  color: #ffffff;
+  width: 100%;
+  height: 100vh;
+  background: url("./images/hero-bg.jpg") no-repeat center center/cover;
+
+
+  .carousel{
+    margin-bottom: 145px;
+  }
+
+  .hero {
+    width: 450px;
+  }
+
+  h2 {
+    font-size: 3.5rem;
+    font-weight: 500;
+    margin-block-end: 15px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+}
 
 .orderNow {
   font-family: 'Dancing Script', cursive;
@@ -104,10 +136,61 @@
 .myCard {
   border-radius: 10%;
 
+  
+}
+
+.menu{
+  .filter-menu{
+    margin-top: 40px !important;
+    margin-bottom: 20px !important;
+  }
+  .active{
+    border-radius: 25px;
+    background: #222831;
+    color: #ffffff;
+  }
+  button{
+    background: #ffffff;
+    color: #222831;
+    cursor: pointer; 
+    padding-inline: 25px;
+    padding: 8px;
+    height: 38px;
+    border: none;
+  }
+
+  .all{
+    width: 68.2px;
+  }
+  .burger{
+    width: 64.03px;
+  }
+
+  .pizza{
+    width: 58.03px;
+  }
+
+  .pasta{
+    width: 58.03px;
+  }
+
+  .fries{
+    width:  51.56px;
+  } 
+
+  .view{
+    background: #ffbe33;
+    color: #ffffff;
+    border-radius: 25px;
+    padding: 10px 55px;
+    border: none;
+    cursor: pointer; 
+    margin-top: 45px;
+    width: 188.66px;
+  }
 }
 
 .card {
-
   border-radius: 15px 15px 0 0;
 
   .card-img-top {
@@ -126,6 +209,11 @@
     color: #ffffff;
     padding-inline: 15px;
     background: #212529;
+
+    .card-text{
+      padding-block-start: 8px;
+      padding-block-start: 16px;
+    }
   }
 }
 
@@ -135,9 +223,9 @@
   padding-block: 90px;
   color: #ffffff;
 
-  .aboutUs {
+  /* .aboutUs {
     width: 360px;
-  }
+  } */
 
   img {
     width: 443px;
@@ -145,27 +233,31 @@
   }
 }
 
-.hero-page {
-  padding-block-start: 150px;
-  padding-inline-start: 50px;
-  color: #ffffff;
-   width: 100%;
-  height: 100vh;
-  background: url("./images/hero-bg.jpg") no-repeat center center/cover;
-
-
-  .hero {
-    width: 450px;
+.table{
+  margin-block: 90px;
+  h2{
+    margin-block-end: 25px;
+    color: #0c0c0c;
+  }
+  .form-control, .form-select{
+    height: 50px;
+    margin-block-end: 25px;
+    padding-inline-start: 25px;
+    box-shadow: none;
+    border: 1px solid #999999;
+    border-radius: 5px;
+    outline: none;
   }
 
-  h2 {
-    font-size: 3.5rem;
-    font-weight: 500;
-    margin-block-end: 15px;
-  }
-
-  p {
-    font-size: 14px;
+  button{
+    background: #ffbe33;
+    color: #ffffff;
+    border-radius: 45px;
+    margin-block-start: 15px;
+    border: none;
+    cursor: pointer; 
+    height: 50px;
+    width: 198.45px;
   }
 }
 
@@ -181,8 +273,27 @@
     width: 360px;
   }
 
+   
+  .aboutUs {
+    margin-inline: 155px;
+   
+  }
 
-  .about {}
+  p{
+    margin-block: 16px;
+  }
+  a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.2rem;
+    background: #ffbe33;
+    padding: 10px 45px;
+    border-radius: 45px;
+    height: 44px;
+    display: inline-block;
+    margin-block-start: 16px;
+  }
+  
 }
 
 @media screen and (max-width: 768px) {
@@ -191,10 +302,11 @@
     text-align: center;
     width: 100%;
 
-    .aboutUs {
-      /* width: 100%; */
-      margin-bottom: 30px;
+   .aboutUs {
+    margin-inline: 135px;
+    }
 
+    
       h2 {
         font-size: 2.5rem;
         font-family: 'Dancing Script', cursive;
@@ -212,7 +324,7 @@
       width: 443px;
       height: auto;
     }
-  }
+  
 
   .orderNow {
     .box {
