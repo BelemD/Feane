@@ -262,8 +262,65 @@ body {
 }
 
 
+.testimonial-card {
+  background: #222831;
+  padding: 25px 25px 15px 25px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  color: #ffffff;
+  height: 200px;
+
+  p {
+    /* font-style: italic; */
+    font-size: 15px;
+    margin-bottom: 10px;
+    color: #ffffff;
+  }
+
+  h6{
+    font-weight: 600;
+    font-size: 18px;
+    margin: 15px 0 5px 0;
+  }
+
+}
+
+.avatar{
+    border-radius: 100%;
+    border: 5px solid #ffbe33;
+  }
+
+  .second-carousel{
+    h2{
+     font-size: 2.5rem; 
+     font-weight:lighter;
+     font-family: 'Dancing Script', cursive;
+     font-style:oblique;
+    }
+  }
+
+  .carousel-control{
+    margin-inline: 540px;
 
 
+    button{
+    width: 45px !important;
+    height: 45px !important;
+    
+    span{
+      font-size: 24px;
+    }
+  }
+
+  }
+
+.footer{
+    background: #222831;
+
+    ul li{
+      list-style: none;
+    }
+  }
 
 
 @media screen and (max-width: 1440px) {
@@ -277,9 +334,7 @@ body {
   .aboutUs {
     margin-inline: 155px;
    
-  }
-
-  p{
+    p{
     margin-block: 16px;
   }
   a{
@@ -293,6 +348,9 @@ body {
     display: inline-block;
     margin-block-start: 16px;
   }
+  }
+
+  
   
 }
 
