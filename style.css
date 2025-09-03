@@ -284,11 +284,16 @@ body {
   }
 
 }
-
+  .logo{
+     font-size: 38px;
+     margin-block-end: 20px;
+     font-family: 'Dancing Script', cursive;
+     font-style:oblique;
+  }
 .avatar{
     border-radius: 100%;
     border: 5px solid #ffbe33;
-  }
+}
 
   .second-carousel{
     h2{
@@ -316,9 +321,54 @@ body {
 
 .footer{
     background: #222831;
+    padding-block-start: 100px;
 
     ul li{
       list-style: none;
+    }
+
+    .top-footer{
+      padding-inline: 145px;
+
+      a{
+        text-decoration: none;
+        color: #ffffff;
+      }
+      h4{
+        font-size: 28px;
+        margin-block-end: 25px;
+        font-weight: 600;
+        font-family: 'Dancing Script', cursive;
+        margin-block-end: 20px;
+        font-style: italic;
+      }
+
+      .footer-social{
+
+        a{
+        display: flex;
+        
+        color: #222831;
+        background: #ffffff;
+        width: 30px;
+        height: 30px;
+        text-decoration: none;
+        border-radius: 100%;
+        text-align: center;
+        margin: 5px 2.5px;
+        justify-content: center;
+        align-items: center;
+      }
+      }
+    }
+
+    .footer-bottom{
+      font-size: 16px;
+
+      a{
+        text-decoration: none;
+        color: #ffffff;
+      }
     }
   }
 

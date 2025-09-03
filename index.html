@@ -33,7 +33,7 @@
 
             <!-- Navbar links -->
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav mx-auto">
+                <ul class="navbar-nav mx-auto ">
                     <li class="nav-item">
                         <a class="nav-link active" href="#">HOME</a>
                     </li>
@@ -50,9 +50,9 @@
 
                 <!-- Icons and Button -->
                 <div class="d-flex gap-2 align-items-center navbar-icons">
-                    <i class="bi bi-person-fill"></i>
+                     <i class="fa fa-user" aria-hidden="true"></i>
                     <i class="bi bi-cart-fill"></i>
-                    <i class="bi bi-search"></i>
+                    <i class="fa fa-search" aria-hidden="true"></i>
                     <a href="#" class="btn btn-order ms-3">Order Online</a>
                 </div>
             </div>
@@ -605,41 +605,49 @@
       </div>
     </div>
 
-    <div class="footer d-flex justify-content-center flex-column">
-        <div class="d-flex justify-content-around align-items-center text-light">
-            <div class="">
-                <ul>
-                    <li>Contact Us</li>
-                    <li><a href="#">Location</a></li>
-                    <li>Call +01 1234567890</li>
-                    <li>demo@gmail.com</li>
+    <!-- -------------------------------------FOOTER-------------------------- -->
+
+    <div class="footer d-flex justify-content-center  flex-column">
+        <div class="top-footer row justify-content-center  text-light ">
+            <div class="col-md-4 ">
+                <ul class="text-center d-flex flex-column gap-1">
+                    <li><h4>Contact Us</h4></li>
+                    <li><a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i> Location</a></li>
+                    <li><a href="#"><i class="fa fa-phone" aria-hidden="true"></i></a> <span>Call +01 1234567890</span></li>
+                    <li><a href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a> <span>demo@gmail.com</span></li>
                 </ul>
             </div>
 
-            <div class="">
-                <ul>
-                    <li>Feane</li>
-                    <li>Necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with
+            <div class="col-md-4">
+                <ul class="text-center d-flex flex-column gap-1">
+                    <li><a href="#" class="logo mb-2">Feane</a></li>
+                    <li><p>Necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with
+                     </p></li>
+                     <li class="footer-social d-flex justify-content-center align-items-center ">
+                        <a href="#" class="icons"> <i class="fa fa-facebook" aria-hidden="true"></i></a>
+                        <a href="#" class="icons"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                        <a href="#" class="icons"> <i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                        <a href="#" class="icons"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                        <a href="#" class="icons"> <i class="fa fa-pinterest" aria-hidden="true"></i></a>
                      </li>
-                     <li></li>
                 </ul>
             </div>
 
-            <div class="">
-                <ul>
-                    <li><a href="Opening Hours"></a></li>
-                    <li>Everyday</li>
+            <div class="col-md-4">
+                <ul class="text-center d-flex flex-column gap-2">
+                    <li><h4>Opening Hours</h4></li>
+                    <li class="mb-2">Everyday</li>
                     <li>10.00Am - 10.00Pm</li>
                 </ul>
             </div>
         </div>
 
-        <div>
+        <div class="footer-bottom text-white text-center mt-5 d-flex flex-column gap-3">
             <p>
                 © 2025 All Rights Reserved By Free Html Templates
             </p>
 
-            <p>© Distributed By ThemeWagon</p>
+            <p>© Distributed By <a href="https://themewagon.com/" target="_blank">ThemeWagon</a></p>
         </div>
     </div>
     </div>
